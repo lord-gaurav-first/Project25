@@ -21,10 +21,10 @@ function setup() {
 		isStatic: true
 	}
 
-	// groundObject=new Ground(width/2, 670, width, 20);
-	groundObject = Bodies.rectangle(450, 600, 1400, 240, groundOptions);
+	 groundObject=new Ground(width/2, 670, width, 20);
+	//groundObject = Bodies.rectangle(450, 600, 1400, 240, groundOptions);
 	dustbinObj=new Dustbin(1200, 650);
-  paper= new Paper(200, 200);
+        paper= new Paper(200, 200);
 	//paper = Bodies.circle(200, 200, 120);
 
 
@@ -35,10 +35,10 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(230);
-  fill("red");
-	rect(groundObject.position.x, groundObject.position.y, groundObject.width, groundObject.height);
+// fill("red");
+//rect(groundObject.position.x, groundObject.position.y, groundObject.width, groundObject.height);
 
-  //groundObject.display();
+  groundObject.display();
   dustbinObj.display();
 	paper.display();
 
